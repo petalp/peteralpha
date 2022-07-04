@@ -1,0 +1,8 @@
+
+        def sqrt_root(number, initial_number, sqrt_iteration):
+        "" This function determines the square root of a number""
+        for value in range(sqrt_iteration+1):
+            initial_number = 0.5 * (initial_number + (number / initial_number))
+        # return round(initial_number, 4)
+        if number % initial_number == 0:
+            print(str(number) + " is a perfect square") 
